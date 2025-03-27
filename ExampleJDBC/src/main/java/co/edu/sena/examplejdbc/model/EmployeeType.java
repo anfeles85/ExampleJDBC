@@ -37,5 +37,10 @@ public class EmployeeType {
         this.descript = descript;
     }
 
+    @Override
+    public String toString() {
+        return descript;
+    }
+
     
 }
