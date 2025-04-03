@@ -67,5 +67,10 @@ public class Employee {
         this.employeeType = employeeType;
     }
 
+    @Override
+    public String toString() {
+        return fullname;
+    }
+
     
 }
