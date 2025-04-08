@@ -45,24 +45,44 @@ public class JFrameHome extends javax.swing.JFrame {
         jButtonEmployeeType.setForeground(new java.awt.Color(255, 255, 255));
         jButtonEmployeeType.setText("Tipos de funcionario");
         jButtonEmployeeType.setPreferredSize(new java.awt.Dimension(144, 30));
+        jButtonEmployeeType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEmployeeTypeActionPerformed(evt);
+            }
+        });
 
         jButtonEmployees.setBackground(new java.awt.Color(0, 153, 51));
         jButtonEmployees.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButtonEmployees.setForeground(new java.awt.Color(255, 255, 255));
         jButtonEmployees.setText("Funcionarios");
         jButtonEmployees.setPreferredSize(new java.awt.Dimension(144, 30));
+        jButtonEmployees.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEmployeesActionPerformed(evt);
+            }
+        });
 
         jButtonKeys.setBackground(new java.awt.Color(0, 153, 51));
         jButtonKeys.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButtonKeys.setForeground(new java.awt.Color(255, 255, 255));
         jButtonKeys.setText("Llaves");
         jButtonKeys.setPreferredSize(new java.awt.Dimension(144, 30));
+        jButtonKeys.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonKeysActionPerformed(evt);
+            }
+        });
 
         jButtonRecords.setBackground(new java.awt.Color(0, 153, 51));
         jButtonRecords.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButtonRecords.setForeground(new java.awt.Color(255, 255, 255));
         jButtonRecords.setText("Registros");
         jButtonRecords.setPreferredSize(new java.awt.Dimension(144, 30));
+        jButtonRecords.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRecordsActionPerformed(evt);
+            }
+        });
 
         jLabel1Title.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1Title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -134,6 +154,30 @@ public class JFrameHome extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonEmployeeTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEmployeeTypeActionPerformed
+        JFrameEmployeeType view = new JFrameEmployeeType();
+        view.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButtonEmployeeTypeActionPerformed
+
+    private void jButtonEmployeesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEmployeesActionPerformed
+        JFrameEmployee view = new JFrameEmployee();
+        view.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButtonEmployeesActionPerformed
+
+    private void jButtonKeysActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKeysActionPerformed
+        JFrameKey view = new JFrameKey();
+        view.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButtonKeysActionPerformed
+
+    private void jButtonRecordsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRecordsActionPerformed
+        JFrameRecord view = new JFrameRecord();
+        view.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButtonRecordsActionPerformed
 
     /**
      * @param args the command line arguments
